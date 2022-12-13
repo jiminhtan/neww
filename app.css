@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body{
+    display: flex;
+    min-height: 100vh;
+    background: #222222;
+}
+.vid
+{
+    position: absolute; 
+    border-radius: 10px;
+    margin-top: 400px;
+    margin-left: 1060px;
+    background-size: cover;
+    border: 5px solid white;
+    border-style: dashed;
+}
+.text::before{
+    margin-top: 800px; 
+    padding-top: 10px; 
+    padding-left: 14.8em;
+    font-size: 70px;
+    color:#ff4473;
+    display: inline-block;
+    text-align: center;
+    content: "never gonna give you up...";
+}
+.text::after{   
+    padding-left: 0.1em;
+    font-size: 70px;
+    border-radius: 5px;
+    color: #ff4473;
+    background: #ff4473;
+    display: inline;
+    animation: blink 1s infinite;
+    content: "i";
+}
+@keyframes blink {
+    from{
+        opacity: 1;
+    }
+    to{
+        opacity: 0;
+    }
+}
